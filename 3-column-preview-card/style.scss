@@ -1,0 +1,125 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --cyan--dark: hsl(179, 100%, 13%);
+
+  --text-white: hsla(0, 0%, 100%, 0.75); // paragraphs
+  --text-gray: hsl(0, 0%, 95%); // (background, headings, buttons)
+
+  --text-size: 15px;
+
+  --font-family-heading: "Big Shoulders Display", cursive;
+  --font-family-text: "Lexend Deca", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: var(--font-family-text);
+  color: var(--text-white);
+}
+
+.container {
+  margin: 4rem 1rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 3.75rem;
+
+  &:first-child {
+    background-color: var(--orange);
+
+    .card__button {
+      color: var(--orange);
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: var(--cyan);
+
+    .card__button {
+      color: var(--cyan);
+    }
+  }
+
+  &:last-child {
+    background-color: var(--cyan--dark);
+
+    .card__button {
+      color: var(--cyan--dark);
+    }
+  }
+}
+
+.card__icon {
+  height: 3rem;
+  width: 4.5rem;
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-family: var(--font-family-heading);
+  color: white;
+}
+
+.card__paragraph {
+  line-height: 1.5;
+  color: var(--text-white);
+}
+
+.card__button {
+  border-radius: 24px;
+  padding: 0.75rem 2rem;
+  border: 2px solid transparent;
+  font-weight: 700;
+  margin-top: 1rem;
+  width: max-content;
+
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--text-white);
+    color: var(--text-white);
+  }
+}
+
+.card:first-child .card__button:hover,
+.card:nth-child(2) .card__button:hover,
+.card:last-child .card__button:hover {
+  color: var(--text-white);
+}
+
+@media (min-width: 768px) {
+  html,
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 20rem));
+  }
+
+  .card {
+    padding: 3rem;
+  }
+
+  .card__title {
+    margin: 1.5rem 0;
+  }
+
+  .card__button {
+    margin-top: 4rem;
+  }
+}

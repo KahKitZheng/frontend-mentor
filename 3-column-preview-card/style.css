@@ -1,0 +1,138 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --cyan--dark: hsl(179, 100%, 13%);
+  --text-white: hsla(0, 0%, 100%, 0.75);
+  --text-gray: hsl(0, 0%, 95%);
+  --text-size: 15px;
+  --font-family-heading: "Big Shoulders Display", cursive;
+  --font-family-text: "Lexend Deca", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  font-family: var(--font-family-text);
+  color: var(--text-white);
+}
+
+.container {
+  margin: 4rem 1rem;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3.75rem;
+}
+
+.card:first-child {
+  background-color: var(--orange);
+}
+
+.card:first-child .card__button {
+  color: var(--orange);
+}
+
+.card:nth-child(2) {
+  background-color: var(--cyan);
+}
+
+.card:nth-child(2) .card__button {
+  color: var(--cyan);
+}
+
+.card:last-child {
+  background-color: var(--cyan--dark);
+}
+
+.card:last-child .card__button {
+  color: var(--cyan--dark);
+}
+
+.card__icon {
+  height: 3rem;
+  width: 4.5rem;
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-family: var(--font-family-heading);
+  color: white;
+}
+
+.card__paragraph {
+  line-height: 1.5;
+  color: var(--text-white);
+}
+
+.card__button {
+  border-radius: 24px;
+  padding: 0.75rem 2rem;
+  border: 2px solid transparent;
+  font-weight: 700;
+  margin-top: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.card__button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--text-white);
+  color: var(--text-white);
+}
+
+.card:first-child .card__button:hover,
+.card:nth-child(2) .card__button:hover,
+.card:last-child .card__button:hover {
+  color: var(--text-white);
+}
+
+@media (min-width: 768px) {
+  html,
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(0, 20rem))[3];
+        grid-template-columns: repeat(3, minmax(0, 20rem));
+  }
+  .card {
+    padding: 3rem;
+  }
+  .card__title {
+    margin: 1.5rem 0;
+  }
+  .card__button {
+    margin-top: 4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
