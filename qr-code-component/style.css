@@ -1,0 +1,96 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+html,
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--light-gray);
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+  border-radius: 24px;
+  background-color: var(--white);
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 32px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  transition: all .2s ease-in-out; // Just for smoother resizing
+}
+
+.card__qr-code {
+  width: 100%;
+  border-radius: 12px;
+  aspect-ratio: 1;
+}
+
+.card__info {
+  padding: 24px 20px;
+}
+
+.card__info__title {
+  font-size: 24px;
+  font-weight; 700;
+  margin: 0;
+  color: var(--dark-blue);
+  letter-spacing: .05rem;
+}
+
+.card__info__description {
+  color: var(--grayish-blue);
+  font-weight: 400;
+  /* font-size: 15px; */
+  margin-bottom: 0;
+  line-height: 1.3;
+  letter-spacing: .05rem;
+}
+
+/* Footer attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.attribution a:visited {
+  color: dodgerblue;
+}
+
+@media (min-width: 375px) {
+  .card {
+    width: 325px;
+  }
+}
+
+@media (min-width: 425px) {
+  .card {
+    width: 375px;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    padding: 16px;
+  }
+
+  .card {
+    width: 1440px;
+  }
+}
