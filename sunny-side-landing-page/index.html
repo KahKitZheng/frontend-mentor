@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/app.css" />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img src="./images/logo.svg" alt="sunnyside" />
+        <button class="nav__burger">
+          <img src="./images/icon-hamburger.svg" alt="menu" />
+        </button>
+
+        <div class="nav__links">
+          <a href="#" class="nav__link">About</a>
+          <a href="#" class="nav__link">Services</a>
+          <a href="#" class="nav__link">Projects</a>
+          <a href="#" class="nav__link" id="contact">Contact</a>
+        </div>
+      </nav>
+      <div class="header__info">
+        <h1 class="header__info__text">WE ARE CREATIVES</h1>
+        <img
+          src="./images/icon-arrow-down.svg"
+          class="header__info__arrow"
+          alt=""
+        />
+      </div>
+    </header>
+
+    <section>
+      <div class="feature__row--reverse" id="feature-transform">
+        <div class="feature__img"></div>
+        <div class="feature__column">
+          <div class="feature__info">
+            <h2 class="feature__info__title">Transform your brand</h2>
+            <p class="feature__info__description">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a href="#" class="feature__info__link">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature__row" id="feature-stand-out">
+        <div class="feature__img"></div>
+        <div class="feature__column">
+          <div class="feature__info">
+            <h2 class="feature__info__title">
+              Stand out to the right audience
+            </h2>
+            <p class="feature__info__description">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a href="#" class="feature__info__link">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature__row">
+        <div class="feature__column" id="feature-graphic-design">
+          <div class="feature__info">
+            <h2 class="feature__info__title">Graphic design</h2>
+            <p class="feature__info__description">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+        <div class="feature__column" id="feature-photography">
+          <div class="feature__info">
+            <h2 class="feature__info__title">Photography</h2>
+            <p class="feature__info__description">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section>
+      <div class="feature__wrapper reverse">
+        <div class="feature">
+          <image
+            src="./images/mobile/image-transform.jpg"
+            class="feature__thumbnail"
+            alt=""
+          />
+        </div>
+        <div class="feature">
+          <div class="feature__info">
+            <h2 class="feature__info__title">Transform your brand</h2>
+            <p class="feature__info__description">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a href="#" class="feature__info__link transform">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature__wrapper">
+        <div class="feature">
+          <image
+            src="./images/mobile/image-stand-out.jpg"
+            class="feature__thumbnail"
+            alt=""
+          />
+        </div>
+        <div class="feature">
+          <div class="feature__info">
+            <h2 class="feature__info__title">
+              Stand out to the right audience
+            </h2>
+            <p class="feature__info__description">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a href="#" class="feature__info__link stand-out">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature__wrapper">
+        <div class="feature full graphic-designer">
+          <div class="feature__info">
+            <h2 class="feature__info__title">Graphic design</h2>
+            <p class="feature__info__description">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+        <div class="feature full photography">
+          <div class="feature__info">
+            <h2 class="feature__info__title">Photography</h2>
+            <p class="feature__info__description">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="testimonial-section">
+      <h2 class="testimonial-section__title">Client testimonials</h2>
+      <div class="testimonial-section__grid">
+        <div class="testimonial">
+          <img src="./images/image-emily.jpg" class="testimonial__img" alt="" />
+          <p class="testimonial__description">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <p class="testimonial__person">Emily R.</p>
+          <small class="testimonial__role">Marketing Director</small>
+        </div>
+        <div class="testimonial">
+          <img
+            src="./images/image-thomas.jpg"
+            class="testimonial__img"
+            alt=""
+          />
+          <p class="testimonial__description">
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <p class="testimonial__person">Thomas S.</p>
+          <small class="testimonial__role">Chief Operating Officer</small>
+        </div>
+        <div class="testimonial">
+          <img
+            src="./images/image-jennie.jpg"
+            class="testimonial__img"
+            alt=""
+          />
+          <p class="testimonial__description">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <p class="testimonial__person">Jennie F.</p>
+          <small class="testimonial__role">Business Owner</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-grid">
+      <div class="product-showcase"></div>
+      <div class="product-showcase"></div>
+      <div class="product-showcase"></div>
+      <div class="product-showcase"></div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__company">sunnyside</p>
+      <div class="footer__links">
+        <a href="#" class="footer__link">About</a>
+        <a href="#" class="footer__link">Services</a>
+        <a href="#" class="footer__link">Projects</a>
+      </div>
+
+      <div class="footer__socials">
+        <img
+          src="./images/icon-facebook.svg"
+          class="footer__social-icon"
+          alt=""
+        />
+        <img
+          src="./images/icon-instagram.svg"
+          class="footer__social-icon"
+          alt=""
+        />
+        <img
+          src="./images/icon-twitter.svg"
+          class="footer__social-icon"
+          alt=""
+        />
+        <img
+          src="./images/icon-pinterest.svg"
+          class="footer__social-icon"
+          alt=""
+        />
+      </div>
+    </footer>
+  </body>
+</html>

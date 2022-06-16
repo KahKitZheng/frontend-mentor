@@ -23,7 +23,6 @@ body {
   color: var(--gray--dark);
   overflow: hidden;
 }
-
 body::before {
   content: "";
   background-image: url("./images/bg-pattern-top.svg");
@@ -36,7 +35,6 @@ body::before {
   top: -110%;
   left: -110%;
 }
-
 body::after {
   content: "";
   background-image: url("./images/bg-pattern-bottom.svg");
@@ -55,15 +53,9 @@ body::after {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
   position: relative;
@@ -71,25 +63,16 @@ body::after {
 }
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   margin: 0 2rem;
   width: 100%;
   max-width: 25rem;
   border-radius: 14px;
   background-color: #fff;
-  -webkit-box-shadow: 0 12px 20px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 12px 20px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 20px 5px rgba(0, 0, 0, 0.1);
 }
-
 .card::before {
   content: "";
   background-image: url("./images/bg-pattern-card.svg");
@@ -117,43 +100,34 @@ body::after {
   padding-bottom: 1rem;
   border-bottom: 2px solid #eee;
 }
-
 .card__user p {
   margin: 0;
   line-height: 1.7;
   color: var(--grayish--blue);
 }
-
 .card__user p.user__name {
   font-size: var(--font-size--large);
 }
-
 .card__user p.user__name span {
   margin-right: 0.25rem;
 }
-
 .card__user p.user__location {
   font-size: 14px;
 }
 
 .card__stats {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(0, 1fr))[3];
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   padding: 1rem 0;
   width: 100%;
 }
-
 .card__stats .accent {
   display: block;
   font-size: var(--font-size--large);
   line-height: 1.5;
 }
-
 .card__stats .stat-heading {
   font-size: 10px;
   letter-spacing: 1px;
   color: var(--grayish--blue);
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -15,8 +15,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 15px;
   font-family: var(--font-family-text);
   color: var(--text-white);
@@ -24,44 +23,30 @@ body {
 
 .container {
   margin: 4rem 1rem;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
   padding: 3.75rem;
 }
-
 .card:first-child {
   background-color: var(--orange);
 }
-
 .card:first-child .card__button {
   color: var(--orange);
 }
-
 .card:nth-child(2) {
   background-color: var(--cyan);
 }
-
 .card:nth-child(2) .card__button {
   color: var(--cyan);
 }
-
 .card:last-child {
   background-color: var(--cyan--dark);
 }
-
 .card:last-child .card__button {
   color: var(--cyan--dark);
 }
@@ -92,7 +77,6 @@ body {
   width: -moz-max-content;
   width: max-content;
 }
-
 .card__button:hover {
   cursor: pointer;
   background-color: transparent;
@@ -108,31 +92,26 @@ body {
 
 @media (min-width: 768px) {
   html,
-  body {
-    display: -webkit-box;
-    display: -ms-flexbox;
+body {
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
+
   .container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(0, 20rem))[3];
-        grid-template-columns: repeat(3, minmax(0, 20rem));
+    grid-template-columns: repeat(3, minmax(0, 20rem));
   }
+
   .card {
     padding: 3rem;
   }
+
   .card__title {
     margin: 1.5rem 0;
   }
+
   .card__button {
     margin-top: 4rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
