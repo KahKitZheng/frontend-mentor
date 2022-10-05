@@ -1,15 +1,15 @@
 .testimonial-section {
-  padding: 64px 0;
+  padding: 94px 16px;
+  height: auto;
 
   &__title {
     color: var(--grayish-blue);
     text-transform: uppercase;
     font-family: Fraunces;
-    font-size: 16px;
+    font-size: 1.25rem;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     word-spacing: 3px;
-    margin-bottom: 32px;
   }
 
   &__grid {
@@ -17,40 +17,44 @@
   }
 
   @media (min-width: 1024px) {
-    padding: 128px 96px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 160px;
 
     &__title {
-      font-size: 20px;
-      letter-spacing: 6px;
+      font-size: 1.125rem;
+      letter-spacing: 5px;
+      margin-bottom: 80px;
     }
 
     &__grid {
-      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      grid-template-columns: repeat(3, 19.5rem);
     }
   }
 }
 
 .testimonial {
-  padding: 32px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 88px;
 
   &__img {
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
+    height: 108px;
+    width: 108px;
     aspect-ratio: 1;
   }
 
   &__description {
-    margin: 32px 0;
-    line-height: 2;
+    margin: 48px 0;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+    scale: 0.85;
     color: var(--very-dark-grayish-blue);
     max-width: 50ch;
   }
@@ -58,17 +62,39 @@
   &__person {
     font-family: Fraunces;
     font-weight: 900;
+    font-size: 1.4rem;
     color: var(--very-dark-desaturated-blue);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   &__role {
     color: var(--grayish-blue);
+    font-size: 1.1rem;
   }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .testimonial {
+    margin-top: 0;
+
+    &__img {
+      height: 76px;
+      width: 76px;
+    }
+
     &__description {
-      margin: 48px 0;
+      margin: 64px 0;
+      font-size: 1rem;
+      line-height: 1.75rem;
+      scale: 1;
+    }
+
+    &__person {
+      font-size: 1rem;
+    }
+
+    &__role {
+      font-size: 0.75rem;
     }
   }
 }

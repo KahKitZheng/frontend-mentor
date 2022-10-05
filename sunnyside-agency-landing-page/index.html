@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/app.css" />
@@ -24,18 +24,21 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <img src="./images/logo.svg" alt="sunnyside" />
-        <button class="nav__burger">
+        <img class="nav__logo" src="./images/logo.svg" alt="sunnyside" />
+        <button class="nav__burger" id="navBtnEl">
           <img src="./images/icon-hamburger.svg" alt="menu" />
         </button>
 
-        <div class="nav__links">
-          <a href="#" class="nav__link">About</a>
-          <a href="#" class="nav__link">Services</a>
-          <a href="#" class="nav__link">Projects</a>
-          <a href="#" class="nav__link" id="contact">Contact</a>
+        <div class="nav__links" id="navEl">
+          <ul>
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a href="#" class="nav__link">Services</a></li>
+            <li><a href="#" class="nav__link">Projects</a></li>
+            <li><a href="#" class="nav__link" id="contact">Contact</a></li>
+          </ul>
         </div>
       </nav>
+
       <div class="header__info">
         <h1 class="header__info__text">WE ARE CREATIVES</h1>
         <img
@@ -46,10 +49,10 @@
       </div>
     </header>
 
-    <section>
-      <div class="feature__row--reverse" id="feature-transform">
-        <div class="feature__img"></div>
-        <div class="feature__column">
+    <main>
+      <section class="feature">
+        <div class="feature__row--reverse" id="feature-transform">
+          <div class="feature__img"></div>
           <div class="feature__info">
             <h2 class="feature__info__title">Transform your brand</h2>
             <p class="feature__info__description">
@@ -60,11 +63,8 @@
             <a href="#" class="feature__info__link">Learn more</a>
           </div>
         </div>
-      </div>
-
-      <div class="feature__row" id="feature-stand-out">
-        <div class="feature__img"></div>
-        <div class="feature__column">
+        <div class="feature__row" id="feature-stand-out">
+          <div class="feature__img"></div>
           <div class="feature__info">
             <h2 class="feature__info__title">
               Stand out to the right audience
@@ -77,146 +77,78 @@
             <a href="#" class="feature__info__link">Learn more</a>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="feature__row">
-        <div class="feature__column" id="feature-graphic-design">
-          <div class="feature__info">
-            <h2 class="feature__info__title">Graphic design</h2>
-            <p class="feature__info__description">
-              Great design makes you memorable. We deliver artwork that
-              underscores your brand message and captures potential clients’
-              attention.
-            </p>
-          </div>
-        </div>
-        <div class="feature__column" id="feature-photography">
-          <div class="feature__info">
-            <h2 class="feature__info__title">Photography</h2>
-            <p class="feature__info__description">
-              Increase your credibility by getting the most stunning,
-              high-quality photos that improve your business image.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section>
-      <div class="feature__wrapper reverse">
-        <div class="feature">
-          <image
-            src="./images/mobile/image-transform.jpg"
-            class="feature__thumbnail"
-            alt=""
-          />
-        </div>
-        <div class="feature">
-          <div class="feature__info">
-            <h2 class="feature__info__title">Transform your brand</h2>
-            <p class="feature__info__description">
-              We are a full-service creative agency specializing in helping
-              brands grow fast. Engage your clients through compelling visuals
-              that do most of the marketing for you.
-            </p>
-            <a href="#" class="feature__info__link transform">Learn more</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature__wrapper">
-        <div class="feature">
-          <image
-            src="./images/mobile/image-stand-out.jpg"
-            class="feature__thumbnail"
-            alt=""
-          />
-        </div>
-        <div class="feature">
-          <div class="feature__info">
-            <h2 class="feature__info__title">
-              Stand out to the right audience
-            </h2>
-            <p class="feature__info__description">
-              Using a collaborative formula of designers, researchers,
-              photographers, videographers, and copywriters, we’ll build and
-              extend your brand in digital places.
-            </p>
-            <a href="#" class="feature__info__link stand-out">Learn more</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature__wrapper">
-        <div class="feature full graphic-designer">
-          <div class="feature__info">
-            <h2 class="feature__info__title">Graphic design</h2>
-            <p class="feature__info__description">
-              Great design makes you memorable. We deliver artwork that
-              underscores your brand message and captures potential clients’
-              attention.
-            </p>
-          </div>
-        </div>
-        <div class="feature full photography">
-          <div class="feature__info">
-            <h2 class="feature__info__title">Photography</h2>
-            <p class="feature__info__description">
-              Increase your credibility by getting the most stunning,
-              high-quality photos that improve your business image.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="testimonial-section">
-      <h2 class="testimonial-section__title">Client testimonials</h2>
-      <div class="testimonial-section__grid">
-        <div class="testimonial">
-          <img src="./images/image-emily.jpg" class="testimonial__img" alt="" />
-          <p class="testimonial__description">
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit.
+      <section class="service__row">
+        <div class="service" id="feature-graphic-design">
+          <h2 class="service__title">Graphic design</h2>
+          <p class="service__description">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
           </p>
-          <p class="testimonial__person">Emily R.</p>
-          <small class="testimonial__role">Marketing Director</small>
         </div>
-        <div class="testimonial">
-          <img
-            src="./images/image-thomas.jpg"
-            class="testimonial__img"
-            alt=""
-          />
-          <p class="testimonial__description">
-            Sunnyside’s enthusiasm coupled with their keen interest in our
-            brand’s success made it a satisfying and enjoyable experience.
+        <div class="service" id="feature-photography">
+          <h2 class="service__title">Photography</h2>
+          <p class="service__description">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
           </p>
-          <p class="testimonial__person">Thomas S.</p>
-          <small class="testimonial__role">Chief Operating Officer</small>
         </div>
-        <div class="testimonial">
-          <img
-            src="./images/image-jennie.jpg"
-            class="testimonial__img"
-            alt=""
-          />
-          <p class="testimonial__description">
-            Incredible end result! Our sales increased over 400% when we worked
-            with Sunnyside. Highly recommended!
-          </p>
-          <p class="testimonial__person">Jennie F.</p>
-          <small class="testimonial__role">Business Owner</small>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="product-grid">
-      <div class="product-showcase"></div>
-      <div class="product-showcase"></div>
-      <div class="product-showcase"></div>
-      <div class="product-showcase"></div>
-    </section>
+      <section class="testimonial-section">
+        <h2 class="testimonial-section__title">Client testimonials</h2>
+        <div class="testimonial-section__grid">
+          <div class="testimonial">
+            <img
+              src="./images/image-emily.jpg"
+              class="testimonial__img"
+              alt=""
+            />
+            <p class="testimonial__description">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <p class="testimonial__person">Emily R.</p>
+            <small class="testimonial__role">Marketing Director</small>
+          </div>
+          <div class="testimonial">
+            <img
+              src="./images/image-thomas.jpg"
+              class="testimonial__img"
+              alt=""
+            />
+            <p class="testimonial__description">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <p class="testimonial__person">Thomas S.</p>
+            <small class="testimonial__role">Chief Operating Officer</small>
+          </div>
+          <div class="testimonial">
+            <img
+              src="./images/image-jennie.jpg"
+              class="testimonial__img"
+              alt=""
+            />
+            <p class="testimonial__description">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <p class="testimonial__person">Jennie F.</p>
+            <small class="testimonial__role">Business Owner</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-grid">
+        <div class="product-showcase"></div>
+        <div class="product-showcase"></div>
+        <div class="product-showcase"></div>
+        <div class="product-showcase"></div>
+      </section>
+    </main>
 
     <footer class="footer">
       <p class="footer__company">sunnyside</p>
@@ -249,5 +181,7 @@
         />
       </div>
     </footer>
+
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
