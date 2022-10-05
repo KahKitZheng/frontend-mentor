@@ -22,7 +22,7 @@ export const challenges = [
   },
   {
     name: "qr-code-component",
-    title: "Stats preview card component",
+    title: "QR code component",
     level: "Newbie",
     internalhost: true,
     id: 4,
