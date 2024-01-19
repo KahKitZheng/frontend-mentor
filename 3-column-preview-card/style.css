@@ -76,9 +76,9 @@ body {
   border: 2px solid transparent;
   border-radius: 25px;
   font-size: 15px;
+  font-family: var(--font-family-text);
   line-height: normal;
   margin-top: 25px;
-  padding: 11px 31.5px 12px;
   width: 146px;
   height: 48px;
   box-sizing: border-box;
