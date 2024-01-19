@@ -32,8 +32,8 @@ body::before {
   position: fixed;
   height: 978px;
   width: 976px;
-  top: -40%;
-  right: 48%;
+  top: -60%;
+  right: 51%;
 }
 body::after {
   content: "";
@@ -67,11 +67,11 @@ body::after {
   align-items: center;
   flex-direction: column;
   margin: 0 24px;
-  width: 100%;
-  max-width: 25rem;
+  height: 375px;
+  width: 350px;
   border-radius: 14px;
   background-color: #fff;
-  box-shadow: 0 12px 20px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.5);
 }
 .card::before {
   content: "";
@@ -100,17 +100,21 @@ body::after {
   padding-bottom: 28px;
   border-bottom: 2px solid #eee;
 }
+.card__user h1,
 .card__user p {
   margin: 0;
   line-height: 1.7;
   color: var(--grayish--blue);
 }
+.card__user h1.user__name,
 .card__user p.user__name {
   font-size: var(--font-size--large);
 }
+.card__user h1.user__name span,
 .card__user p.user__name span {
   margin-right: 8.5px;
 }
+.card__user h1.user__location,
 .card__user p.user__location {
   font-size: 14px;
 }
