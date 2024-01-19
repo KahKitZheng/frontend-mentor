@@ -91,7 +91,7 @@ body::after {
   height: 96px;
   width: 96px;
   margin-bottom: -2.5rem;
-  border: 6px solid #fff;
+  border: 5px solid #fff;
   border-radius: 50%;
 }
 
@@ -103,31 +103,36 @@ body::after {
 .card__user h1,
 .card__user p {
   margin: 0;
+}
+.card__user .user__name {
   line-height: 1.7;
-  color: var(--grayish--blue);
-}
-.card__user h1.user__name,
-.card__user p.user__name {
   font-size: var(--font-size--large);
+  color: var(--blue--dark);
 }
-.card__user h1.user__name span,
-.card__user p.user__name span {
+.card__user .user__name span {
+  color: var(--grayish--blue);
+  font-weight: normal;
   margin-right: 8.5px;
 }
-.card__user h1.user__location,
-.card__user p.user__location {
+.card__user.user__location {
   font-size: 14px;
 }
 
 .card__stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
   width: 249px;
+  margin: 24px auto 0;
 }
 .card__stats .card-stat {
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+.card__stats .card-stat:nth-of-type(2) {
+  margin-left: 46px;
+}
+.card__stats .card-stat:nth-of-type(3) {
+  margin-left: 54px;
 }
 .card__stats .card-stat .accent {
   display: block;
