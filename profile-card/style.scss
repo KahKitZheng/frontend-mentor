@@ -84,7 +84,7 @@ body {
     background-size: cover;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
-    height: 9rem;
+    height: 140px;
     width: 100%;
   }
 }
@@ -128,21 +128,24 @@ body {
 .card__stats {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  // padding: 1rem 0;
-  width: 100%;
+  width: 249px;
 
-  // stats with accents
-  & .accent {
-    display: block;
-    font-size: var(--font-size--large);
-    margin-bottom: 9px;
-  }
+  .card-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 
-  & .stat-heading {
-    font-size: 10px;
-    letter-spacing: 1.5px;
-    color: var(--grayish--blue);
-    margin-top: 24px;
-    margin-bottom: 27px;
+    .accent {
+      display: block;
+      margin: 0;
+      font-size: var(--font-size--large);
+      line-height: 1;
+    }
+
+    .stat-heading {
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      color: var(--grayish--blue);
+    }
   }
 }

@@ -80,7 +80,7 @@ body::after {
   background-size: cover;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
-  height: 9rem;
+  height: 140px;
   width: 100%;
 }
 
@@ -122,17 +122,21 @@ body::after {
 .card__stats {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  width: 100%;
+  width: 249px;
 }
-.card__stats .accent {
+.card__stats .card-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.card__stats .card-stat .accent {
   display: block;
+  margin: 0;
   font-size: var(--font-size--large);
-  margin-bottom: 9px;
+  line-height: 1;
 }
-.card__stats .stat-heading {
+.card__stats .card-stat .stat-heading {
   font-size: 10px;
   letter-spacing: 1.5px;
   color: var(--grayish--blue);
-  margin-top: 24px;
-  margin-bottom: 27px;
 }/*# sourceMappingURL=style.css.map */
