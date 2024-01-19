@@ -9,7 +9,7 @@ html,
 body {
   font-family: "Outfit", sans-serif;
   background-color: var(--light-gray);
-  height: 95vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
