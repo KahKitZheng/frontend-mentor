@@ -20,6 +20,14 @@ body {
   background-color: #f2f2f2;
 }
 
+.sr-only {
+  position: absolute;
+  top: -500px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .container {
   margin: 88px 24px;
   border-radius: 8px;
@@ -62,13 +70,12 @@ body {
   font-size: 40px;
   font-family: var(--font-family-heading);
   text-transform: uppercase;
-  line-height: normal;
   color: white;
 }
 
 .card__paragraph {
   font-size: 15px;
-  line-height: 166.667%;
+  line-height: normal;
   color: var(--text-white);
   margin: 0;
 }
@@ -78,7 +85,7 @@ body {
   border-radius: 25px;
   font-size: 15px;
   font-family: var(--font-family-text);
-  line-height: 166.667%;
+  line-height: normal;
   margin-top: 25px;
   width: 146px;
   height: 48px;
