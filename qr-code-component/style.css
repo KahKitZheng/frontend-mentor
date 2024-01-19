@@ -11,17 +11,15 @@ body {
   font-feature-settings: "clig" off, "liga" off;
   background-color: var(--light-gray);
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
+  place-items: center;
+  margin: 0;
 }
 
 .card {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: auto;
   padding: 16px;
   border-radius: 20px;
   background-color: var(--white);
@@ -40,7 +38,7 @@ body {
 }
 
 .card__info {
-  padding: 24px 0;
+  margin-top: 24px;
 }
 
 .card__info__title {
@@ -56,7 +54,8 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.188px;
+  letter-spacing: 0.19px;
+  margin-top: 16px;
   margin-bottom: 0;
   padding: 0 16px;
 }
