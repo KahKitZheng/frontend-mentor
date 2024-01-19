@@ -97,18 +97,11 @@ body {
 }
 
 @media (min-width: 768px) {
-  html,
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 920px;
     height: 500px;
-    margin-top: 171px;
+    margin: 171px auto 0;
   }
 }/*# sourceMappingURL=style.css.map */
