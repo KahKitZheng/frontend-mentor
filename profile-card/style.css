@@ -30,10 +30,10 @@ body::before {
   background-size: contain;
   background-position: right;
   position: fixed;
-  height: 175%;
-  width: 175%;
-  top: -110%;
-  left: -110%;
+  height: 978px;
+  width: 976px;
+  top: -40%;
+  right: 48%;
 }
 body::after {
   content: "";
@@ -41,10 +41,10 @@ body::after {
   background-repeat: no-repeat;
   background-size: contain;
   position: fixed;
-  height: 175%;
-  width: 175%;
-  top: 50%;
-  left: 40%;
+  height: 978px;
+  width: 976px;
+  top: 52%;
+  left: 47%;
 }
 
 .accent {
@@ -66,7 +66,7 @@ body::after {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 2rem;
+  margin: 0 24px;
   width: 100%;
   max-width: 25rem;
   border-radius: 14px;
@@ -88,8 +88,8 @@ body::after {
   position: relative;
   top: calc(-3.5rem - 3px);
   z-index: 15;
-  height: 7rem;
-  width: 7rem;
+  height: 96px;
+  width: 96px;
   margin-bottom: -2.5rem;
   border: 6px solid #fff;
   border-radius: 50%;
@@ -97,7 +97,7 @@ body::after {
 
 .card__user {
   width: 100%;
-  padding-bottom: 1rem;
+  padding-bottom: 28px;
   border-bottom: 2px solid #eee;
 }
 .card__user p {
@@ -109,7 +109,7 @@ body::after {
   font-size: var(--font-size--large);
 }
 .card__user p.user__name span {
-  margin-right: 0.25rem;
+  margin-right: 8.5px;
 }
 .card__user p.user__location {
   font-size: 14px;
@@ -118,16 +118,17 @@ body::after {
 .card__stats {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  padding: 1rem 0;
   width: 100%;
 }
 .card__stats .accent {
   display: block;
   font-size: var(--font-size--large);
-  line-height: 1.5;
+  margin-bottom: 9px;
 }
 .card__stats .stat-heading {
   font-size: 10px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   color: var(--grayish--blue);
+  margin-top: 24px;
+  margin-bottom: 27px;
 }/*# sourceMappingURL=style.css.map */

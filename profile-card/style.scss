@@ -31,10 +31,11 @@ body {
     background-size: contain;
     background-position: right;
     position: fixed;
-    height: 175%;
-    width: 175%;
-    top: -110%;
-    left: -110%;
+    height: 978px;
+    width: 976px;
+    top: -40%;
+    right: 48%;
+    // transform: rotate(-135deg);
   }
 
   &::after {
@@ -43,10 +44,10 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
-    height: 175%;
-    width: 175%;
-    top: 50%;
-    left: 40%;
+    height: 978px;
+    width: 976px;
+    top: 52%;
+    left: 47%;
   }
 }
 
@@ -69,7 +70,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 2rem;
+  margin: 0 24px;
   width: 100%;
   max-width: 25rem;
   border-radius: 14px;
@@ -92,8 +93,8 @@ body {
   position: relative;
   top: calc(-3.5rem - 3px);
   z-index: 15;
-  height: 7rem;
-  width: 7rem;
+  height: 96px;
+  width: 96px;
   margin-bottom: -2.5rem;
   border: 6px solid #fff;
   border-radius: 50%;
@@ -101,7 +102,7 @@ body {
 
 .card__user {
   width: 100%;
-  padding-bottom: 1rem;
+  padding-bottom: 28px;
   border-bottom: 2px solid #eee;
 
   p {
@@ -113,7 +114,7 @@ body {
       font-size: var(--font-size--large);
 
       span {
-        margin-right: 0.25rem;
+        margin-right: 8.5px;
       }
     }
 
@@ -126,19 +127,21 @@ body {
 .card__stats {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  padding: 1rem 0;
+  // padding: 1rem 0;
   width: 100%;
 
   // stats with accents
   & .accent {
     display: block;
     font-size: var(--font-size--large);
-    line-height: 1.5;
+    margin-bottom: 9px;
   }
 
   & .stat-heading {
     font-size: 10px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     color: var(--grayish--blue);
+    margin-top: 24px;
+    margin-bottom: 27px;
   }
 }
