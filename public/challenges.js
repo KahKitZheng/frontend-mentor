@@ -48,4 +48,11 @@ export const challenges = [
     internalhost: true,
     id: 7,
   },
+  {
+    name: "recipe-page",
+    title: "Recipe page",
+    level: "Newbie",
+    internalhost: true,
+    id: 8,
+  },
 ];
