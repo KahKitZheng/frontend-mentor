@@ -13,6 +13,7 @@ GitHub landing page: [https://kahkitzheng.github.io/frontend-mentor/](https://ka
 | 3   | [Profile card component](https://kahkitzheng.github.io/frontend-mentor/profile-card)                          | [Link to GitHub repo](https://github.com/kahkitzheng/frontend-mentor/tree/main/profile-card)                  |
 | 4   | [QR code component](https://kahkitzheng.github.io/frontend-mentor/qr-code-component)                          | [Link to GitHub repo](https://github.com/kahkitzheng/frontend-mentor/tree/main/qr-code-component)             |
 | 5   | [Sunnyside agency landing page](https://kahkitzheng.github.io/frontend-mentor/sunnyside-agency-landing-page/) | [Link to GitHub repo](https://github.com/kahkitzheng/frontend-mentor/tree/main/sunnyside-agency-landing-page) |
+| 6   | [Blog preview card](https://kahkitzheng.github.io/frontend-mentor/blog-preview-card/)                         | [Link to GitHub repo](https://github.com/KahKitZheng/frontend-mentor/tree/main/blog-preview-card)             |
 
 ## Credits
 
