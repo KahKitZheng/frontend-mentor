@@ -184,7 +184,6 @@ svg {
   }
   .nav__links {
     position: initial;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     flex-direction: row;
@@ -217,7 +216,7 @@ svg {
 }
 @media (min-width: 875px) {
   .feature__row,
-.feature__row--reverse {
+  .feature__row--reverse {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(33rem, 1fr);
   }
@@ -263,7 +262,6 @@ svg {
   letter-spacing: 0.025rem;
   display: block;
   margin: 64px auto 0;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -281,28 +279,28 @@ svg {
 
 @media (min-width: 875px) {
   #feature-transform > .feature__img,
-#feature-stand-out > .feature__img {
+  #feature-stand-out > .feature__img {
     height: 100%;
     max-height: 100%;
     margin: 0 auto;
   }
   #feature-transform .feature__info,
-#feature-stand-out .feature__info {
+  #feature-stand-out .feature__info {
     text-align: left;
     max-width: 45ch;
     padding: 64px 0;
   }
   #feature-transform .feature__info__title,
-#feature-stand-out .feature__info__title {
+  #feature-stand-out .feature__info__title {
     font-size: 2.55rem;
   }
   #feature-transform .feature__info__description,
-#feature-stand-out .feature__info__description {
+  #feature-stand-out .feature__info__description {
     font-size: 1rem;
     line-height: 1.75rem;
   }
   #feature-transform .feature__info__link,
-#feature-stand-out .feature__info__link {
+  #feature-stand-out .feature__info__link {
     font-size: 0.875rem;
     margin: 40px 0 0;
   }
@@ -384,15 +382,15 @@ svg {
 
 @media (min-width: 875px) {
   #feature-graphic-design.service,
-#feature-photography.service {
+  #feature-photography.service {
     background-position: center;
   }
   #feature-graphic-design .service__title,
-#feature-photography .service__title {
+  #feature-photography .service__title {
     font-size: 1.5rem;
   }
   #feature-graphic-design .service__description,
-#feature-photography .service__description {
+  #feature-photography .service__description {
     font-size: 0.875rem;
     line-height: 1.5rem;
     scale: 1;
@@ -537,8 +535,8 @@ svg {
 
 .footer {
   padding: 64px 32px;
-  background-color: hsl(165deg, 44%, 70%);
-  color: hsl(165deg, 44%, 32%);
+  background-color: hsl(165, 44%, 70%);
+  color: hsl(165, 44%, 32%);
 }
 
 .footer__company {
