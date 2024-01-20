@@ -51,9 +51,9 @@ main {
   padding: 40px 32px;
 }
 .recipe__header__title {
-  align-self: stretch;
   color: var(--Dark-Charcoal, #312e2c);
   font-family: "Young Serif";
+  font-weight: 400;
   font-size: 36px;
   line-height: 100%; /* 36px */
 }
@@ -166,5 +166,8 @@ main {
   }
   .recipe__header__title {
     font-size: 40px;
+  }
+  .recipe__preparation {
+    padding: 28px;
   }
 }/*# sourceMappingURL=styles.css.map */
