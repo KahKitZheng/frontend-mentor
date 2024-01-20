@@ -35,7 +35,7 @@ export const challenges = [
     id: 5,
   },
   {
-    name: "blow-preview-card",
+    name: "blog-preview-card",
     title: "Blog preview card",
     level: "Newbie",
     internalhost: true,

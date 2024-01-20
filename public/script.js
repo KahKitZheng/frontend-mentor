@@ -11,7 +11,7 @@ function loadData() {
 function createCard(item) {
   const gridEl = document.getElementById("gridEl");
   const url = item.internalhost === true ? `./${item.name}` : item.url;
-  const image = `./${item.name}/design/desktop-solution.png`;
+  const image = `./${item.name}/design/desktop-design.jpg`;
   const repo =
     item.internalhost === true
       ? `https://github.com/KahKitZheng/frontend-mentor/tree/main/${item.name}`
