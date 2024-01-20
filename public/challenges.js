@@ -41,4 +41,11 @@ export const challenges = [
     internalhost: true,
     id: 6,
   },
+  {
+    name: "social-links-profile",
+    title: "Social links profile",
+    level: "Newbie",
+    internalhost: true,
+    id: 7,
+  },
 ];
