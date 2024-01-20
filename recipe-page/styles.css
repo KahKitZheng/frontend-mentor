@@ -125,6 +125,7 @@ main {
 }
 .recipe__section__instructions__step::marker {
   color: var(--Wenge-Brown, #5f564d);
+  font-weight: 700;
 }
 .recipe__section__nutrition__text {
   margin-bottom: 24px;
@@ -166,6 +167,9 @@ main {
   .recipe-preview__image {
     height: 100%;
     border-radius: 12px;
+  }
+  .recipe {
+    padding: 40px;
   }
   .recipe__header__title {
     font-size: 40px;
