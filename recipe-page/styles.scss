@@ -61,7 +61,7 @@ main {
 
     &__description {
       margin-top: 24px;
-      color: var(--Dark-Charcoal, #312e2c);
+      color: var(--Wenge-Brown, #312e2c);
       line-height: 150%; /* 24px */
     }
   }
@@ -210,6 +210,20 @@ main {
 
     &__preparation {
       padding: 28px;
+
+      &__list {
+        padding-left: 24px;
+      }
+    }
+
+    &__section {
+      &__ingredients {
+        &__item {
+          &::before {
+            font-size: 20px;
+          }
+        }
+      }
     }
   }
 }

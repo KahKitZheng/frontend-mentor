@@ -59,7 +59,7 @@ main {
 }
 .recipe__header__description {
   margin-top: 24px;
-  color: var(--Dark-Charcoal, #312e2c);
+  color: var(--Wenge-Brown, #312e2c);
   line-height: 150%; /* 24px */
 }
 .recipe__preparation {
@@ -176,5 +176,11 @@ main {
   }
   .recipe__preparation {
     padding: 28px;
+  }
+  .recipe__preparation__list {
+    padding-left: 24px;
+  }
+  .recipe__section__ingredients__item::before {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */
