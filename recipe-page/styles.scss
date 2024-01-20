@@ -79,6 +79,8 @@ main {
     }
 
     &__list {
+      display: grid;
+      gap: 8px;
       margin-top: 16px;
       padding-left: 20px;
 
@@ -94,6 +96,7 @@ main {
       margin-bottom: 24px;
       color: var(--Brandy-Red, #854632);
       font-family: "Young Serif";
+      font-weight: 400;
       font-size: 28px;
       line-height: 100%; /* 28px */
     }
